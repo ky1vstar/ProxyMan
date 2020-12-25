@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		6030FEC82596246500419E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6030FEC72596246500419E9D /* Assets.xcassets */; };
 		6030FECB2596246500419E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6030FECA2596246500419E9D /* Preview Assets.xcassets */; };
 		6030FECE2596246500419E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6030FECC2596246500419E9D /* LaunchScreen.storyboard */; };
+		6030FEE625962E5900419E9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030FEE525962E5900419E9D /* R.generated.swift */; };
+		D67DF1089047581004093275 /* Pods_Proxyman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F5FEAE508F6A2525900CD02 /* Pods-Proxyman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxyman.release.xcconfig"; path = "Target Support Files/Pods-Proxyman/Pods-Proxyman.release.xcconfig"; sourceTree = "<group>"; };
 		6030FEBE2596246400419E9D /* Proxyman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proxyman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6030FEC12596246400419E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6030FEC32596246400419E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		6030FECA2596246500419E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6030FECD2596246500419E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6030FECF2596246500419E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6030FEE525962E5900419E9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proxyman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46A66D337314D1AB4C6DCF5 /* Pods-Proxyman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxyman.debug.xcconfig"; path = "Target Support Files/Pods-Proxyman/Pods-Proxyman.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67DF1089047581004093275 /* Pods_Proxyman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				6030FEC02596246400419E9D /* Proxyman */,
 				6030FEBF2596246400419E9D /* Products */,
+				6409747AE28DC5183695FF56 /* Pods */,
+				803E40644201726146A48428 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +84,10 @@
 		6030FED92596273700419E9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6030FEE325962E4000419E9D /* Development */,
 				6030FECC2596246500419E9D /* LaunchScreen.storyboard */,
 				6030FEC72596246500419E9D /* Assets.xcassets */,
-				6030FECA2596246500419E9D /* Preview Assets.xcassets */,
+				6030FEE525962E5900419E9D /* R.generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -91,6 +101,31 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		6030FEE325962E4000419E9D /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				6030FECA2596246500419E9D /* Preview Assets.xcassets */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		6409747AE28DC5183695FF56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B46A66D337314D1AB4C6DCF5 /* Pods-Proxyman.debug.xcconfig */,
+				1F5FEAE508F6A2525900CD02 /* Pods-Proxyman.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		803E40644201726146A48428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6030FED22596246500419E9D /* Build configuration list for PBXNativeTarget "Proxyman" */;
 			buildPhases = (
+				2D7E34624054C5E757F20965 /* [CP] Check Pods Manifest.lock */,
+				6030FEE125962DB100419E9D /* R.swift */,
 				6030FEBA2596246400419E9D /* Sources */,
 				6030FEBB2596246400419E9D /* Frameworks */,
 				6030FEBC2596246400419E9D /* Resources */,
+				634FCAE7689ADCC9620D233E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +194,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D7E34624054C5E757F20965 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Proxyman-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6030FEE125962DB100419E9D /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Proxyman/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Proxyman/Resources/R.generated.swift\"\n";
+		};
+		634FCAE7689ADCC9620D233E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Proxyman/Pods-Proxyman-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Proxyman/Pods-Proxyman-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Proxyman/Pods-Proxyman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6030FEBA2596246400419E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,6 +264,7 @@
 				6030FEC22596246400419E9D /* AppDelegate.swift in Sources */,
 				6030FEC42596246400419E9D /* SceneDelegate.swift in Sources */,
 				6030FEC62596246400419E9D /* ContentView.swift in Sources */,
+				6030FEE625962E5900419E9D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,11 +400,12 @@
 		};
 		6030FED32596246500419E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B46A66D337314D1AB4C6DCF5 /* Pods-Proxyman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Proxyman/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Proxyman/Resources/Development\"";
 				DEVELOPMENT_TEAM = 749N2H2D4B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Proxyman/Supporting Files/Info.plist";
@@ -321,11 +423,12 @@
 		};
 		6030FED42596246500419E9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5FEAE508F6A2525900CD02 /* Pods-Proxyman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Proxyman/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Proxyman/Resources/Development\"";
 				DEVELOPMENT_TEAM = 749N2H2D4B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Proxyman/Supporting Files/Info.plist";
