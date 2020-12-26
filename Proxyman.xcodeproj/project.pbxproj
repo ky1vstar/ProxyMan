@@ -14,8 +14,36 @@
 		6030FECB2596246500419E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6030FECA2596246500419E9D /* Preview Assets.xcassets */; };
 		6030FECE2596246500419E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6030FECC2596246500419E9D /* LaunchScreen.storyboard */; };
 		6030FEE625962E5900419E9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030FEE525962E5900419E9D /* R.generated.swift */; };
+		6039DA082597A7A100F32490 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6039DA072597A7A100F32490 /* NetworkExtension.framework */; };
+		6039DA0B2597A7A100F32490 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6039DA0A2597A7A100F32490 /* PacketTunnelProvider.swift */; };
+		6039DA102597A7A100F32490 /* PacketTunnelProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6039DA062597A7A100F32490 /* PacketTunnelProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6039DA1C2597A89500F32490 /* ExtensionPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6039DA1B2597A89500F32490 /* ExtensionPrint.swift */; };
 		D67DF1089047581004093275 /* Pods_Proxyman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6039DA0E2597A7A100F32490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6030FEB62596246400419E9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6039DA052597A7A100F32490;
+			remoteInfo = PacketTunnelProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6039DA142597A7A100F32490 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6039DA102597A7A100F32490 /* PacketTunnelProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F5FEAE508F6A2525900CD02 /* Pods-Proxyman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxyman.release.xcconfig"; path = "Target Support Files/Pods-Proxyman/Pods-Proxyman.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +56,13 @@
 		6030FECD2596246500419E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6030FECF2596246500419E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6030FEE525962E5900419E9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		6039D9F12597A14900F32490 /* Proxyman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Proxyman.entitlements; sourceTree = "<group>"; };
+		6039DA062597A7A100F32490 /* PacketTunnelProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnelProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6039DA072597A7A100F32490 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		6039DA0A2597A7A100F32490 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		6039DA0C2597A7A100F32490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6039DA0D2597A7A100F32490 /* PacketTunnelProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnelProvider.entitlements; sourceTree = "<group>"; };
+		6039DA1B2597A89500F32490 /* ExtensionPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPrint.swift; sourceTree = "<group>"; };
 		7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proxyman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46A66D337314D1AB4C6DCF5 /* Pods-Proxyman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxyman.debug.xcconfig"; path = "Target Support Files/Pods-Proxyman/Pods-Proxyman.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +76,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6039DA032597A7A100F32490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6039DA082597A7A100F32490 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				6030FEC02596246400419E9D /* Proxyman */,
+				6039DA092597A7A100F32490 /* PacketTunnelProvider */,
 				6030FEBF2596246400419E9D /* Products */,
 				6409747AE28DC5183695FF56 /* Pods */,
 				803E40644201726146A48428 /* Frameworks */,
@@ -58,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6030FEBE2596246400419E9D /* Proxyman.app */,
+				6039DA062597A7A100F32490 /* PacketTunnelProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				6030FECF2596246500419E9D /* Info.plist */,
+				6039D9F12597A14900F32490 /* Proxyman.entitlements */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +155,33 @@
 			path = Development;
 			sourceTree = "<group>";
 		};
+		6039DA092597A7A100F32490 /* PacketTunnelProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6039DA0A2597A7A100F32490 /* PacketTunnelProvider.swift */,
+				6039DA1A2597A88000F32490 /* Utils */,
+				6039DA172597A7E700F32490 /* Supporting Files */,
+			);
+			path = PacketTunnelProvider;
+			sourceTree = "<group>";
+		};
+		6039DA172597A7E700F32490 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6039DA0C2597A7A100F32490 /* Info.plist */,
+				6039DA0D2597A7A100F32490 /* PacketTunnelProvider.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6039DA1A2597A88000F32490 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6039DA1B2597A89500F32490 /* ExtensionPrint.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		6409747AE28DC5183695FF56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */,
+				6039DA072597A7A100F32490 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,15 +213,34 @@
 				6030FEBB2596246400419E9D /* Frameworks */,
 				6030FEBC2596246400419E9D /* Resources */,
 				634FCAE7689ADCC9620D233E /* [CP] Embed Pods Frameworks */,
+				6039DA142597A7A100F32490 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6039DA0F2597A7A100F32490 /* PBXTargetDependency */,
 			);
 			name = Proxyman;
 			productName = Proxyman;
 			productReference = 6030FEBE2596246400419E9D /* Proxyman.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6039DA052597A7A100F32490 /* PacketTunnelProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6039DA112597A7A100F32490 /* Build configuration list for PBXNativeTarget "PacketTunnelProvider" */;
+			buildPhases = (
+				6039DA022597A7A100F32490 /* Sources */,
+				6039DA032597A7A100F32490 /* Frameworks */,
+				6039DA042597A7A100F32490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnelProvider;
+			productName = PacketTunnelProvider;
+			productReference = 6039DA062597A7A100F32490 /* PacketTunnelProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -159,6 +252,9 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					6030FEBD2596246400419E9D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					6039DA052597A7A100F32490 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -177,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				6030FEBD2596246400419E9D /* Proxyman */,
+				6039DA052597A7A100F32490 /* PacketTunnelProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +286,13 @@
 				6030FECE2596246500419E9D /* LaunchScreen.storyboard in Resources */,
 				6030FECB2596246500419E9D /* Preview Assets.xcassets in Resources */,
 				6030FEC82596246500419E9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6039DA042597A7A100F32490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +372,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6039DA022597A7A100F32490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6039DA0B2597A7A100F32490 /* PacketTunnelProvider.swift in Sources */,
+				6039DA1C2597A89500F32490 /* ExtensionPrint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6039DA0F2597A7A100F32490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6039DA052597A7A100F32490 /* PacketTunnelProvider */;
+			targetProxy = 6039DA0E2597A7A100F32490 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6030FECC2596246500419E9D /* LaunchScreen.storyboard */ = {
@@ -337,6 +458,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER_PREFIX = ua.ky1vstar2;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -391,6 +513,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER_PREFIX = ua.ky1vstar2;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -402,11 +525,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B46A66D337314D1AB4C6DCF5 /* Pods-Proxyman.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Proxyman/Supporting Files/Proxyman.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Proxyman/Resources/Development\"";
-				DEVELOPMENT_TEAM = 749N2H2D4B;
+				DEVELOPMENT_TEAM = Q78J22N7UT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Proxyman/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -414,8 +540,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ua.ky1vstar.Proxyman;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX).Proxyman";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -425,11 +552,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F5FEAE508F6A2525900CD02 /* Pods-Proxyman.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Proxyman/Supporting Files/Proxyman.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Proxyman/Resources/Development\"";
-				DEVELOPMENT_TEAM = 749N2H2D4B;
+				DEVELOPMENT_TEAM = R556GPA7X2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Proxyman/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -437,8 +566,51 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ua.ky1vstar.Proxyman;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX).Proxyman";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6039DA122597A7A100F32490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PacketTunnelProvider/Supporting Files/PacketTunnelProvider.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q78J22N7UT;
+				INFOPLIST_FILE = "PacketTunnelProvider/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX).Proxyman.PacketTunnelProvider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6039DA132597A7A100F32490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PacketTunnelProvider/Supporting Files/PacketTunnelProvider.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R556GPA7X2;
+				INFOPLIST_FILE = "PacketTunnelProvider/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX).Proxyman.PacketTunnelProvider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +633,15 @@
 			buildConfigurations = (
 				6030FED32596246500419E9D /* Debug */,
 				6030FED42596246500419E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6039DA112597A7A100F32490 /* Build configuration list for PBXNativeTarget "PacketTunnelProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6039DA122597A7A100F32490 /* Debug */,
+				6039DA132597A7A100F32490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
