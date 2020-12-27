@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-import NetworkExtension
+import Combine
+
+var cancellables = [AnyCancellable]()
 
 struct ContentView: View {
     var body: some View {
@@ -16,28 +18,21 @@ struct ContentView: View {
     }
     
     private func addProxy() {
-        let manager = NETunnelProviderManager()
-        manager.localizedDescription = "Charles (local)"
+        let proxy = Proxy(
+            displayName: "Charles",
+            configuration: .manual(.init(
+                type: .http,
+                serverAddress: "192.168.0.110",
+                serverPort: 27016
+            ))
+        )
         
-        let configuration = NETunnelProviderProtocol()
-        configuration.serverAddress = "192.168.0.110"
-        configuration.providerBundleIdentifier = "ua.ky1vstar2.Proxyman.PacketTunnelProvider"
-        configuration.providerConfiguration = ["kek": "lol"]
-        
-        let proxySettings = NEProxySettings()
-        let proxyServer = NEProxyServer(address: "192.168.0.110", port: 27016)
-        proxySettings.httpEnabled = true
-        proxySettings.httpServer = proxyServer
-        proxySettings.httpsEnabled = true
-        proxySettings.httpsServer = proxyServer
-        proxySettings.excludeSimpleHostnames = true
-        proxySettings.matchDomains = [""]
-        configuration.proxySettings = proxySettings
-        
-        manager.protocolConfiguration = configuration
-        manager.saveToPreferences { error in
-            print(error)
-        }
+        DefaultProxyRepository.shared
+            .saveProxy(proxy)
+            .sink {
+                print($0)
+            } receiveValue: { _ in }
+            .store(in: &cancellables)
     }
 }
 

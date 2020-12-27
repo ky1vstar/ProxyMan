@@ -7,6 +7,7 @@ inhibit_all_warnings!
 target 'Proxyman' do
 	pod 'R.swift'
     pod 'Swinject'
+    pod 'CombineExt'
 end
 
 post_install do |installer|
