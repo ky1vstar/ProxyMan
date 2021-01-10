@@ -17,7 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         if let windowScene = scene as? UIWindowScene {
-            let contentView = ContentView()
+            let contentView = NavigationView {
+                ProxyListScene()
+            }
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window

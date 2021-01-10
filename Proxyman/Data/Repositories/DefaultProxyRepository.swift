@@ -39,14 +39,6 @@ class DefaultProxyRepository: ProxyRepository {
             }
             .share(replay: 1)
             .eraseToAnyPublisher()
-        
-        fetchProxies()
-            .sink { error in
-                print(error)
-            } receiveValue: { value in
-                print(value)
-            }
-            .store(in: &temp)
     }
     
     func fetchProxies() -> AnyPublisher<[Proxy], Error> {

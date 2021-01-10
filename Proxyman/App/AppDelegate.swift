@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Swinject
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions
             launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        setupDependencies()
         return true
+    }
+    
+    private func setupDependencies() {
+        let container = Container.shared
+        
+        container.register(\.proxyRepository, DefaultProxyRepository())
     }
 
     // MARK: UISceneSession Lifecycle

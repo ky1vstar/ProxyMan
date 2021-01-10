@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6030FEC22596246400419E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030FEC12596246400419E9D /* AppDelegate.swift */; };
 		6030FEC42596246400419E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030FEC32596246400419E9D /* SceneDelegate.swift */; };
-		6030FEC62596246400419E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030FEC52596246400419E9D /* ContentView.swift */; };
 		6030FEC82596246500419E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6030FEC72596246500419E9D /* Assets.xcassets */; };
 		6030FECB2596246500419E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6030FECA2596246500419E9D /* Preview Assets.xcassets */; };
 		6030FECE2596246500419E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6030FECC2596246500419E9D /* LaunchScreen.storyboard */; };
@@ -25,8 +24,19 @@
 		60671CD62597DB0B003225D3 /* ManualProxyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60671CD52597DB0B003225D3 /* ManualProxyConfiguration.swift */; };
 		60671CDF2597E050003225D3 /* ProxyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60671CDE2597E050003225D3 /* ProxyAdapter.swift */; };
 		60671CE52597E56D003225D3 /* DefaultProxyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60671CE42597E56D003225D3 /* DefaultProxyRepository.swift */; };
+		60717FE325A3B49900AFE0FD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60717FE225A3B49900AFE0FD /* ViewModel.swift */; };
+		60717FE925A3B71900AFE0FD /* ReducedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60717FE825A3B71900AFE0FD /* ReducedState.swift */; };
+		60717FEF25A3C28400AFE0FD /* ProxyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60717FEE25A3C28400AFE0FD /* ProxyListViewModel.swift */; };
 		60BE481E2598AED000E28C51 /* NetworkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE481D2598AED000E28C51 /* NetworkExtension.swift */; };
 		60BE482425993A4900E28C51 /* AnyPublisher+Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE482325993A4900E28C51 /* AnyPublisher+Wrap.swift */; };
+		60E7514525AB4DF600AB6F37 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7514425AB4DF600AB6F37 /* Dependencies.swift */; };
+		60E7514925AB4F8B00AB6F37 /* ProxyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7514825AB4F8B00AB6F37 /* ProxyListView.swift */; };
+		60E7514D25AB54BE00AB6F37 /* ProxyListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7514C25AB54BE00AB6F37 /* ProxyListScene.swift */; };
+		60E7515325AB55D200AB6F37 /* ProxyListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7515225AB55D200AB6F37 /* ProxyListItemView.swift */; };
+		60E7515A25AB569200AB6F37 /* Previewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7515925AB569200AB6F37 /* Previewable.swift */; };
+		60E7516125AB578300AB6F37 /* ProxyDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7516025AB578300AB6F37 /* ProxyDetailScene.swift */; };
+		60E7516925AB57A100AB6F37 /* ProxyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7516825AB57A100AB6F37 /* ProxyDetailViewModel.swift */; };
+		60E7517525AB589F00AB6F37 /* ProxyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7517425AB589F00AB6F37 /* ProxyDetailView.swift */; };
 		D67DF1089047581004093275 /* Pods_Proxyman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +69,6 @@
 		6030FEBE2596246400419E9D /* Proxyman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proxyman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6030FEC12596246400419E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6030FEC32596246400419E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6030FEC52596246400419E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6030FEC72596246500419E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6030FECA2596246500419E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6030FECD2596246500419E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,8 +88,19 @@
 		60671CD52597DB0B003225D3 /* ManualProxyConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualProxyConfiguration.swift; sourceTree = "<group>"; };
 		60671CDE2597E050003225D3 /* ProxyAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyAdapter.swift; sourceTree = "<group>"; };
 		60671CE42597E56D003225D3 /* DefaultProxyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProxyRepository.swift; sourceTree = "<group>"; };
+		60717FE225A3B49900AFE0FD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		60717FE825A3B71900AFE0FD /* ReducedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducedState.swift; sourceTree = "<group>"; };
+		60717FEE25A3C28400AFE0FD /* ProxyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyListViewModel.swift; sourceTree = "<group>"; };
 		60BE481D2598AED000E28C51 /* NetworkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtension.swift; sourceTree = "<group>"; };
 		60BE482325993A4900E28C51 /* AnyPublisher+Wrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Wrap.swift"; sourceTree = "<group>"; };
+		60E7514425AB4DF600AB6F37 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		60E7514825AB4F8B00AB6F37 /* ProxyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyListView.swift; sourceTree = "<group>"; };
+		60E7514C25AB54BE00AB6F37 /* ProxyListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyListScene.swift; sourceTree = "<group>"; };
+		60E7515225AB55D200AB6F37 /* ProxyListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyListItemView.swift; sourceTree = "<group>"; };
+		60E7515925AB569200AB6F37 /* Previewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previewable.swift; sourceTree = "<group>"; };
+		60E7516025AB578300AB6F37 /* ProxyDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyDetailScene.swift; sourceTree = "<group>"; };
+		60E7516825AB57A100AB6F37 /* ProxyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyDetailViewModel.swift; sourceTree = "<group>"; };
+		60E7517425AB589F00AB6F37 /* ProxyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyDetailView.swift; sourceTree = "<group>"; };
 		7B6049B6513FF0F0947F0767 /* Pods_Proxyman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proxyman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46A66D337314D1AB4C6DCF5 /* Pods-Proxyman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxyman.debug.xcconfig"; path = "Target Support Files/Pods-Proxyman/Pods-Proxyman.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +150,8 @@
 			children = (
 				6030FEDB25962A0100419E9D /* App */,
 				60BE481C2598AEB000E28C51 /* Extensions */,
-				6030FEC52596246400419E9D /* ContentView.swift */,
+				60E7515825AB566800AB6F37 /* Utils */,
+				60717FE125A3B47300AFE0FD /* MVVM */,
 				60671CBE2597D9A3003225D3 /* Data */,
 				60671CBB2597D947003225D3 /* Scenes */,
 				6030FED92596273700419E9D /* Resources */,
@@ -164,6 +185,7 @@
 			children = (
 				6030FEC12596246400419E9D /* AppDelegate.swift */,
 				6030FEC32596246400419E9D /* SceneDelegate.swift */,
+				60E7514425AB4DF600AB6F37 /* Dependencies.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -207,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				60671CBC2597D96B003225D3 /* ProxyList */,
+				60E7515F25AB575A00AB6F37 /* ProxyDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -214,6 +237,8 @@
 		60671CBC2597D96B003225D3 /* ProxyList */ = {
 			isa = PBXGroup;
 			children = (
+				60E7514C25AB54BE00AB6F37 /* ProxyListScene.swift */,
+				60717FF225A3C28700AFE0FD /* ViewModels */,
 				60671CBD2597D975003225D3 /* Views */,
 			);
 			path = ProxyList;
@@ -222,6 +247,8 @@
 		60671CBD2597D975003225D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60E7514825AB4F8B00AB6F37 /* ProxyListView.swift */,
+				60E7515225AB55D200AB6F37 /* ProxyListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +299,23 @@
 			path = Adapters;
 			sourceTree = "<group>";
 		};
+		60717FE125A3B47300AFE0FD /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				60717FE225A3B49900AFE0FD /* ViewModel.swift */,
+				60717FE825A3B71900AFE0FD /* ReducedState.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		60717FF225A3C28700AFE0FD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				60717FEE25A3C28400AFE0FD /* ProxyListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		60BE481C2598AEB000E28C51 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +323,40 @@
 				60BE481D2598AED000E28C51 /* NetworkExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60E7515825AB566800AB6F37 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				60E7515925AB569200AB6F37 /* Previewable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		60E7515F25AB575A00AB6F37 /* ProxyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				60E7516025AB578300AB6F37 /* ProxyDetailScene.swift */,
+				60E7516625AB578900AB6F37 /* ViewModels */,
+				60E7516725AB578F00AB6F37 /* Views */,
+			);
+			path = ProxyDetail;
+			sourceTree = "<group>";
+		};
+		60E7516625AB578900AB6F37 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				60E7516825AB57A100AB6F37 /* ProxyDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		60E7516725AB578F00AB6F37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60E7517425AB589F00AB6F37 /* ProxyDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6409747AE28DC5183695FF56 /* Pods */ = {
@@ -466,15 +544,25 @@
 			files = (
 				60671CDF2597E050003225D3 /* ProxyAdapter.swift in Sources */,
 				60671CD62597DB0B003225D3 /* ManualProxyConfiguration.swift in Sources */,
+				60E7515325AB55D200AB6F37 /* ProxyListItemView.swift in Sources */,
 				6030FEC22596246400419E9D /* AppDelegate.swift in Sources */,
+				60E7514D25AB54BE00AB6F37 /* ProxyListScene.swift in Sources */,
+				60E7514925AB4F8B00AB6F37 /* ProxyListView.swift in Sources */,
+				60E7514525AB4DF600AB6F37 /* Dependencies.swift in Sources */,
 				6030FEC42596246400419E9D /* SceneDelegate.swift in Sources */,
 				60671CD22597DAFF003225D3 /* AutoProxyConfiguration.swift in Sources */,
 				60671CE52597E56D003225D3 /* DefaultProxyRepository.swift in Sources */,
-				6030FEC62596246400419E9D /* ContentView.swift in Sources */,
+				60717FE325A3B49900AFE0FD /* ViewModel.swift in Sources */,
 				6030FEE625962E5900419E9D /* R.generated.swift in Sources */,
 				60BE481E2598AED000E28C51 /* NetworkExtension.swift in Sources */,
 				60671CCE2597DAD1003225D3 /* ProxyConfiguration.swift in Sources */,
+				60E7516925AB57A100AB6F37 /* ProxyDetailViewModel.swift in Sources */,
+				60E7515A25AB569200AB6F37 /* Previewable.swift in Sources */,
+				60717FE925A3B71900AFE0FD /* ReducedState.swift in Sources */,
 				60671CC82597DA92003225D3 /* Proxy.swift in Sources */,
+				60E7516125AB578300AB6F37 /* ProxyDetailScene.swift in Sources */,
+				60717FEF25A3C28400AFE0FD /* ProxyListViewModel.swift in Sources */,
+				60E7517525AB589F00AB6F37 /* ProxyDetailView.swift in Sources */,
 				60671CC02597D9C7003225D3 /* ProxyRepository.swift in Sources */,
 				60BE482425993A4900E28C51 /* AnyPublisher+Wrap.swift in Sources */,
 			);

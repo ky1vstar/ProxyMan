@@ -21,3 +21,16 @@ struct Proxy: Hashable, Codable {
         self.configuration = configuration
     }
 }
+
+extension Proxy: Previewable {
+    static func preview() -> Proxy {
+        .init(
+            displayName: "Preview proxy",
+            configuration: .auto(
+                .init(
+                    url: URL(string: "https://example.com/proxy.pac")!
+                )
+            )
+        )
+    }
+}
